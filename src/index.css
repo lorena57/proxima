@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  background-image: linear-gradient(#667db6, #0082c8, #0082c8, #667db6);
+  color: #354358;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#667db6, #0082c8, #0082c8, #667db6);
+}
+
+a {
+  text-decoration: none;
+  color: #354548;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.app_container {
+  padding-top: 50px;
+}
+
+.app_row {
+  height: 86vh;
+}
+
+.app_main_content {
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px 15px;
+  box-shadow: 0 0 7px black;
+}
+
+/* sidebar */
+
+.sidebar {
+  background-color: white;
+  height: 100%;
+  border-radius: 15px;
+  padding: 25px 15px;
+  box-shadow: 0 0 7px black;
+  text-align: center;
+}
+
+.sidebar_icon {
+  width: 25px;
+  height: 25px;
+}
+
+.sidebar_name {
+  margin: 20px 0;
+  font-size: 1.7rem;
+}
+
+.sidebar_name > span {
+  color: #0082c8;
+}
+
+.sidebar_item {
+  margin-bottom: 6px;
+  padding-top: 6px;
+  height: 40px;
+  font-size: 1.05rem;
+  border-radius: 15px;
+}
+
+.sidebar_title {
+  background-color: #f1f1f1;
+  border-radius: 15px;
+}
+
+.sidebar_contact {
+  background-color: #dbdddf;
+  padding: 2px 0;
+  margin: 20px -15px;
+}
+
+.sidebar_email {
+  background-image: linear-gradient(#667db6, #0082c8, #0082c8, #667db6);
+  border-radius: 15px;
+  color: #fff;
+  margin: 15px 25px 0px;
+  cursor: pointer;
+  transition: all 2s linear;
+}
+
+.sidebar_email:hover {
+  transform: scale(1.2);
+}
+
+.sidebar_github:hover,
+.sidebar_resume:hover {
+  background-color: #f1f1f2;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .app_main_content {
+    margin: 30px 0;
+  }
+}
+
+/* navbar */
+
+.navbar_items {
+  display: flex;
+}
+
+.navbar_active {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #0082c8;
+  border-bottom: 4px solid #0082c8;
+}
+
+.navbar_item {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #354358;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.navbar_item:hover {
+  background: -webkit-linear-gradient(#667db6, #0082c8, #0082c8, #667db6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* about */
+.about {
+  padding: 20px;
+  margin: -35px;
+}
+
+.about_intro {
+  font-size: 1rem;
+  padding: 20px 28px;
+  margin: 10px 0;
+}
+
+.about_container {
+  background-color: #dbdddf;
+  padding: 30px 20px;
+}
+
+.about_heading {
+  font-size: 25px;
+  font-weight: 700;
+  color: #354358;
+  margin-left: 10px;
+}
+
+/* skillcard */
+.skill_card {
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+.skill_card_icon {
+  width: 40px;
+  height: 40px;
+}
+
+.skill_card_body {
+  margin-left: 15px;
+}
+
+.skill_card_content {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6e7e91;
+}
+
+/* resume */
+
+.resume {
+  padding-top: 20px;
+}
+
+.resume_card_heading,
+.resume_language_heading {
+  margin-left: 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #354538;
+}
+
+.resume_card_body {
+  margin-top: 10px;
+}
+
+.resume_card_title {
+  font-weight: 700;
+}
+
+.resume_card_name {
+  font-size: 16px;
+}
+
+.resume_card_details {
+  font-size: 0.9rem;
+  padding-top: 20px;
+}
+
+/* bar */
+
+.bar {
+  width: 90%;
+  background-color: #f1f2f3;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.bar_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.bar_wrapper {
+  padding: 4px 14px;
+  font-size: 0.9rem;
+  color: #354538;
+}
+
+/* projects */
+
+.projects {
+  height: 72vh;
+  padding-top: 30px;
+  overflow-y: auto;
+}
+
+.project_card_wrapper {
+  margin: 10px 0;
+  width: 100%;
+  height: 100%;
+  min-height: 160px;
+}
+
+.project_card_image {
+  width: 100%;
+  height: 80%;
+  border-radius: 30px;
+  border: 1px solid #0082c8;
+  transition: transform 0.3s linear;
+}
+
+.project_card_image:hover {
+  transform: scale(1.05);
+}
+
+.project_card_icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.project_card_title {
+  margin-top: 12px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects_navbar {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.projects_navbar > div {
+  margin: 0 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.projects_navbar_active {
+  color: #0082c8;
+}
+
+@media (max-width: 600px) {
+  .app_main_content {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .navbar_active {
+    font-size: 1.5rem;
+  }
+
+  .navbar_item {
+    font-size: 1rem;
+  }
+}
