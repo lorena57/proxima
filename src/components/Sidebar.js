@@ -3,7 +3,7 @@ import React from 'react';
 import github from '../assets/icons/github.svg';
 import download from '../assets/icons/download.svg';
 import location from '../assets/icons/location.svg';
-import LorenaCardenas from '../assets/resume/LorenaCardenas.pdf';
+import LorenaCardenas from '../assets/resume/LorenaCardenasRev2.pdf';
 
 const Sidebar = () => {
   const handleEmailMe = () => {
@@ -17,7 +17,7 @@ const Sidebar = () => {
         Lorena <span>Cardenas</span>
       </div>
       <div className="sidebar_item sidebar_title">Software Developer</div>
-      <a href={LorenaCardenas} download="LorenaCardenas.pdf">
+      <a href={LorenaCardenas} download="LorenaCardenasRev2.pdf">
         <div className="sidebar_image sidebar_resume">
           <img src={download} alt="resume" className="sidebar_icon mr-2" />
           Download Resume
